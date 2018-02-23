@@ -1,0 +1,28 @@
+{
+  "name": "Adrenaline Light Theme",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Essa extensão foi criada para usarmos o Tema Light, enquanto o mesmo está desabilitado no forum da Adrenaline.",
+  "homepage_url": "https://www.profolio.com.br/?l=adrenalinelight",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "https://adrenaline.uol.com.br/forum/*"
+  ],
+  "web_accessible_resources": [
+    "src/css/light.css"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://adrenaline.uol.com.br/forum/*"
+      ],
+      "js": [
+        "src/js/applyCss.js"
+      ]
+    }
+  ]
+}
