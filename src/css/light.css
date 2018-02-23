@@ -5,163 +5,199 @@
  *
  **/
 
- /* Geral */
- .body {
-     color: #323333;
- }
-
- a:link,
- a:visited {
+/* Geral */
+.body {
     color: #323333;
- }
+}
 
- /* Header */
- #headerMover #header ~ div {
-    background: #f1f3f6 !important; /* To overwrite inline style */
- }
+a:link,
+a:visited {
+color: #323333;
+}
 
- #headerMover {
-     background: #f1f3f6;
- }
+/* Header */
+#headerMover #header ~ div {
+background: #f1f3f6 !important; /* To overwrite inline style */
+}
 
- #headerMover #header {
-     background: #323333;
- }
+#headerMover {
+    background: #f1f3f6;
+}
 
- .breadcrumb {
-    background-color: #feffff;
-    font-size: 14px;
-    box-shadow: none;
-    border: 1px solid #ccc;
- }
+#headerMover #header {
+    background: #323333;
+}
 
- .breadcrumb .crumbs {
-     line-height: 39px;
- }
+/* Menu */
+.Menu .primaryContent.menuHeader .links a,
+.Menu .secondaryContent.menuColumns .blockLinksList a,
+.Menu .sectionFooter a {
+    color: #fff;
+}
 
- .breadcrumb .jumpMenuTrigger {
-    margin: 10px 0 0;
-    width: 23px;
-    height: 20px;
-    background-size: 246px;
-    background-position: 0 0;
- }
+.breadcrumb {
+background-color: #feffff;
+font-size: 14px;
+box-shadow: none;
+border: 1px solid #ccc;
+}
 
- .PanelScroller .scrollContainer {
-     background: #feffff;
-     box-shadow: none;
-     border: 1px solid #ccc;
-     color: #323333;
- }
- .PanelScroller .navControls a.current span {
-    border-top-color: #fff;
- }
- .DismissParent .DismissCtrl {
-     color: #323333;
- }
+.breadcrumb .crumbs {
+    line-height: 39px;
+}
 
- .titleBar h1 {
-     color: #323333;
- }
+.breadcrumb .jumpMenuTrigger {
+margin: 10px 0 0;
+width: 23px;
+height: 20px;
+background-size: 246px;
+background-position: 0 0;
+}
 
- .sectionMain,
- .primaryContent,
- .secondaryContent,
- .memberList,
- #recentActivity,
- .resourceList,
- #warnings > div[class=""] {
+.PanelScroller .scrollContainer {
     background: #feffff;
     box-shadow: none;
     border: 1px solid #ccc;
- }
+    color: #323333;
+}
+.PanelScroller .navControls a.current span {
+border-top-color: #fff;
+}
 
- .sectionMain {
-     border: 0;
-     background-color: transparent;
- }
+.DismissParent .DismissCtrl {
+    color: #323333;
+}
 
- .sectionMain:after,
- .sidebar .secondaryContent:after,
- .xengallerySideBar .secondaryContent:after,
- .profilePage .mast .primaryContent:after,
- .profilePage .mast .secondaryContent:after,
- .memberList:after,
- .errorPanel:after,
- .nodeDescriptionTip:after,
- .resourceListSidebar .secondaryContent:after,
- .PanelScroller .scrollContainer:after {
-    background-image: none;
- }
 
- .avatar img,
- .avatar .img,
- .avatarCropper {
-    padding: 1px;
-    background-color: #ccc;
+.sectionMain,
+.primaryContent,
+.secondaryContent,
+.memberList,
+#recentActivity,
+.resourceList,
+#warnings > div[class=""] {
+background: #feffff;
+box-shadow: none;
+border: 1px solid #ccc;
+}
+
+.sectionMain {
     border: 0;
- }
+    background-color: transparent;
+}
 
- .pairsJustified dd {
+.sectionMain:after,
+.sidebar .secondaryContent:after,
+.xengallerySideBar .secondaryContent:after,
+.profilePage .mast .primaryContent:after,
+.profilePage .mast .secondaryContent:after,
+.memberList:after,
+.errorPanel:after,
+.nodeDescriptionTip:after,
+.resourceListSidebar .secondaryContent:after,
+.PanelScroller .scrollContainer:after {
+background-image: none;
+}
+
+.avatar img,
+.avatar .img,
+.avatarCropper {
+padding: 1px;
+background-color: #ccc;
+border: 0;
+}
+
+.pairsJustified dd,
+.pairsInline dd,
+.node .nodeLastPost,
+form.sectionMain .node .secondaryContent.nodeLastPost {
+color: #323333;
+}
+
+.sidebar .section .primaryContent > h3:first-child,
+.sidebar .section .secondaryContent > h3:first-child {
+background-image: none;
+background-color: #fcfcfc;
+border-bottom: 1px solid #f2f2f2;
+color: #323333;
+font-weight: bold;
+}
+
+.sidebar .section .primaryContent > h3:first-child:before,
+.sidebar .section .secondaryContent > h3:first-child:before,
+.sidebar .section .primaryContent h3:after,
+.sidebar .section .secondaryContent h3:after {
+    border-bottom: 0;
+}
+
+.sidebar .section .primaryContent h3 a,
+.sidebar .section .secondaryContent h3 a {
+color: #323333;
+font-weight: bold;
+}
+
+.sidebar .userList .moreLink {
     color: #323333;
- }
+}
 
- .sidebar .section .primaryContent > h3:first-child,
- .sidebar .section .secondaryContent > h3:first-child {
+/* Forum List */
+.nodeList .node.category,
+.nodeList .node,
+.nodeList .node.category.shortNode {
+    background-color: #f1f3f6;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-bottom: 4px solid #3c3c3c;
+}
+.nodeList .node span.brc,
+.nodeList .node.groupNoChildren:after,
+.nodeList .node.level_2:after,
+.nodeList .categoryStrip:after {
+    display: none;
+}
+
+.nodeList .categoryStrip {
     background-image: none;
-    background-color: #fcfcfc;
-    border-bottom: 1px solid #f2f2f2;
-    color: #323333;
-    font-weight: bold;
- }
+    background-color: #3c3c3c;
+}
 
- .sidebar .section .primaryContent > h3:first-child:before,
- .sidebar .section .secondaryContent > h3:first-child:before,
- .sidebar .section .primaryContent h3:after,
- .sidebar .section .secondaryContent h3:after {
-     border-bottom: 0;
- }
-
- .sidebar .section .primaryContent h3 a,
- .sidebar .section .secondaryContent h3 a {
-    color: #323333;
-    font-weight: bold;
- }
-
- .sidebar .userList .moreLink {
-     color: #323333;
- }
-
- /* Forum List */
- .nodeList .node.category {
-     background-color: #f1f3f6;
-     box-shadow: none;
-     border: 1px solid #ccc;
-     border-bottom: 4px solid #3c3c3c;
- }
- .nodeList .node span.brc,
- .nodeList .node.groupNoChildren:after,
- .nodeList .node.level_2:after,
- .nodeList .categoryStrip:after {
-     display: none;
- }
-
- .nodeList .categoryStrip {
-     background-image: none;
-     background-color: #3c3c3c;
- }
-
- .nodeList .categoryForumNodeInfo,
- .nodeList .forumNodeInfo,
- .nodeList .pageNodeInfo,
- .nodeList .linkNodeInfo,
- .nodeList .libraryNodeInfo,
- .nodeList .node.groupNoChildren + .node.groupNoChildren .nodeInfo,
- .nodeList .node.level_1.forum.groupNoChildren + .node.groupNoChildren > .categoryStrip + .nodeInfo {
+.nodeList .categoryForumNodeInfo,
+.nodeList .forumNodeInfo,
+.nodeList .pageNodeInfo,
+.nodeList .linkNodeInfo,
+.nodeList .libraryNodeInfo,
+.nodeList .node.groupNoChildren + .node.groupNoChildren .nodeInfo,
+.nodeList .node.level_1.forum.groupNoChildren + .node.groupNoChildren > .categoryStrip + .nodeInfo {
     border-top: none;
     border-bottom: 1px solid #ccc;
- }
+}
 
- .categoryStrip .categoryToggle {
+.node .nodeText .nodeTitle,
+.node .nodeText .nodeTitle a {
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.categoryStrip .categoryToggle {
      background-color: #fff;
- }
+}
+
+ /* Forum Item */
+.PageNav .pageNavHeader {
+    color: #323333;
+}
+
+.titleBar h1 {
+    color: #323333;
+}
+
+.PageNav a {
+    background-color: #fff;
+    box-shadow: none;
+    padding: 2px 5px;
+}
+
+.PageNav .scrollable {
+    width: 168px;
+    height: 22px;
+}
