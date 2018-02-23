@@ -68,7 +68,6 @@ border-top-color: #fff;
     color: #323333;
 }
 
-
 .sectionMain,
 .primaryContent,
 .secondaryContent,
@@ -76,9 +75,9 @@ border-top-color: #fff;
 #recentActivity,
 .resourceList,
 #warnings > div[class=""] {
-background: #feffff;
-box-shadow: none;
-border: 1px solid #ccc;
+    background: #feffff;
+    box-shadow: none;
+    border: 1px solid #ccc;
 }
 
 .sectionMain {
@@ -96,31 +95,35 @@ border: 1px solid #ccc;
 .nodeDescriptionTip:after,
 .resourceListSidebar .secondaryContent:after,
 .PanelScroller .scrollContainer:after {
-background-image: none;
+    background-image: none;
+}
+
+a.callToAction span {
+    color: #fff;
 }
 
 .avatar img,
 .avatar .img,
 .avatarCropper {
-padding: 1px;
-background-color: #ccc;
-border: 0;
+    padding: 1px;
+    background-color: #ccc;
+    border: 0;
 }
 
 .pairsJustified dd,
 .pairsInline dd,
 .node .nodeLastPost,
 form.sectionMain .node .secondaryContent.nodeLastPost {
-color: #323333;
+    color: #323333;
 }
 
 .sidebar .section .primaryContent > h3:first-child,
 .sidebar .section .secondaryContent > h3:first-child {
-background-image: none;
-background-color: #fcfcfc;
-border-bottom: 1px solid #f2f2f2;
-color: #323333;
-font-weight: bold;
+    background-image: none;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f2f2f2;
+    color: #323333;
+    font-weight: bold;
 }
 
 .sidebar .section .primaryContent > h3:first-child:before,
@@ -147,7 +150,7 @@ font-weight: bold;
     background-color: #f1f3f6;
     box-shadow: none;
     border: 1px solid #ccc;
-    border-bottom: 4px solid #3c3c3c;
+    border-bottom: 4px solid #323333;
 }
 .nodeList .node span.brc,
 .nodeList .node.groupNoChildren:after,
@@ -158,7 +161,7 @@ font-weight: bold;
 
 .nodeList .categoryStrip {
     background-image: none;
-    background-color: #3c3c3c;
+    background-color: #323333;
 }
 
 .nodeList .categoryForumNodeInfo,
@@ -196,8 +199,62 @@ font-weight: bold;
     box-shadow: none;
     padding: 2px 5px;
 }
+.PageNav a.text {
+    padding: 2px 5px;
+}
+a.PageNavPrev,
+a.PageNavNext {
+    color: #323333;
+    height: 18px;
+}
 
 .PageNav .scrollable {
     width: 168px;
     height: 22px;
 }
+
+.discussionListItem {
+    border-top: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    width: calc(100% - 8px);
+    border-left: 3px solid transparent;
+}
+
+.DiscussionList.InlineModForm,
+.discussionListItems .sticky {
+    background-color: #fff;
+}
+
+.discussionList .sectionHeaders {
+    background-color: #323333;
+}
+.discussionList .sectionHeaders a {
+    color: #fff;
+}
+.discussionListItems .unread .title a,
+.discussionListItem .title a {
+    color: #323333;
+}
+
+.discussionListItems li.sticky {
+    border-left: 3px solid #F66;
+    width: calc(100% - 12px);
+}
+
+.discussionListItem .stats dl {
+    border-left: 0;
+    border-right: 0;
+}
+
+.discussionListItem .stats dl:after,
+.discussionListItem .stats dl:before {
+    display: none;
+}
+
+.discussionList .stats {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+/* Post */
