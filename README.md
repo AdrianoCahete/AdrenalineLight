@@ -2,6 +2,16 @@
 
 Extensão para o Chrome e Firefox que habilita uma versão alternativa do tema Light para o forum Adrenaline
 
+## Avisos
+- Essa não é uma extensão oficial do Adrenaline, então não adianta reclamar lá.  
+Problemas deverão ser reportados nesse repositório, veja mais informações no final deste arquivo;
+
+- Nem tudo foi alterado.  
+O header/footer, por exemplo, se manterão escuros.
+
+- Eu fiz essa extensão pro meu próprio uso  
+Mas vi alguns usuários pedindo a volta do tema Light no fórum, então resolvi postar nas lojas.
+
 ## Como instalar?
 
 ### Versão estável
@@ -25,10 +35,10 @@ Nota: No Firefox, toda vez que você fecha o navegador, a extensão é desabilit
 - As colunas da lista de forum tem a cor vermelha no hover
 - Algumas tags de tópico são difíceis de ler por causa das cores
 - O ícone de rss é quase invisível por usar o pack de ícones do tema escuro
-- 
 
 ## Achei um bug, o que faço?
 Primeiro, veja se ele não ocorre também no tema escuro. Se acontecer, reporte ele no fórum do Adrenaline.
-Se não acontecer, pode ser bug dessa extensão. Reporte na aba Issues, com a versão da extensão, seu navegador, seu sistema operacional, printscreen e link para o tópico.
+Se não acontecer, pode ser bug dessa extensão.
+Reporte na aba Issues, com a versão da extensão, seu navegador, seu sistema operacional, printscreen e link para o tópico.
 
 ## ! Essa extensão poderá ser removida caso o tema light volte.
