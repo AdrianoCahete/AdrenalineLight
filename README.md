@@ -6,11 +6,19 @@ Extensão para o Chrome e Firefox que habilita uma versão alternativa do tema L
 - Essa não é uma extensão oficial do Adrenaline, então não adianta reclamar lá.  
 Problemas deverão ser reportados nesse repositório, veja mais informações no final deste arquivo;
 
-- Nem tudo foi alterado.  
-O header/footer, por exemplo, se manterão escuros.
+- O forum carrega no tema escuro, porém faz uma animação de "fade" pro tema claro.  
+Isso é esperado porque a extensão se aplica assim que o site carrega.
+
+- Cores claras em fundo claro  
+Se alguém forçar o uso de alguma cor, seja no tópico, seja na assinatura, eu não tenho como trocar. Até tenho, mas não vale o trabalho.
+Então tópicos com texto claro  ou assinaturas com o texto claro não vão ser legíveis (já não eram no tema claro originalmente antes).
 
 - Eu fiz essa extensão pro meu próprio uso  
 Mas vi alguns usuários pedindo a volta do tema Light no fórum, então resolvi postar nas lojas.
+
+## Nem tudo foi alterado
+- O header/footer, por exemplo, se manterão escuros
+- Caixa de texto/resposta não dá pra alterar
 
 ## Como instalar?
 
@@ -37,7 +45,7 @@ Nota: No Firefox, toda vez que você fecha o navegador, a extensão é desabilit
 - O ícone de rss é quase invisível por usar o pack de ícones do tema escuro
 
 ## Achei um bug, o que faço?
-Primeiro, veja se ele não ocorre também no tema escuro. Se acontecer, reporte ele no fórum do Adrenaline.
+Primeiro, veja se ele não ocorre também no tema escuro. Se acontecer, [reporte ele no fórum do Adrenaline](https://adrenaline.uol.com.br/forum/threads/bugs-do-forum-em-geral-relatem-aqui.363386/).
 Se não acontecer, pode ser bug dessa extensão.
 Reporte na aba Issues, com a versão da extensão, seu navegador, seu sistema operacional, printscreen e link para o tópico.
 
