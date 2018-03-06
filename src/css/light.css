@@ -133,9 +133,9 @@ a.callToAction span {
     background-color: rgb(226, 53, 46);
     color: #fff;
 }
-.button.OverlayCloser {
-    /*border: 1px solid #ccc;*/
-}
+/*.button.OverlayCloser {
+    border: 1px solid #ccc;
+}*/
 
 .button:hover,
 .button[href]:hover,
@@ -214,7 +214,8 @@ font-weight: bold;
 .discussionListItem .stats dl:after,
 .discussionListItem .stats dl:before,
 .messageUserInfo:after,
-.userBanner.wrapped span {
+.userBanner.wrapped span,
+.message .newIndicator span {
     display: none;
 }
 
@@ -333,6 +334,10 @@ a.PageNavNext {
     color: #323333;
 }
 
+.authorEnd .username.author {
+    font-weight: bold;
+}
+
 .userBanner.bannerRed,
 .userBanner.bannerGreen {
     background-image: none;
@@ -359,6 +364,11 @@ a.PageNavNext {
 .message .signature {
     border-top: 1px solid #ccc;
     color: #323333;
+}
+
+.message .newIndicator {
+    top: 1px;
+    right: 1px;
 }
 
 .bbCodeBlock {
@@ -472,4 +482,13 @@ a.PageNavNext {
 /* Search */
 .searchResult .snippet a {
     color: #323333;
+}
+
+/* Spoiler Tag */
+.bbCodeSpoilerButton {
+    height: 20px;
+}
+
+.hasJs .bbCodeSpoilerText {
+    background-color: #fff;
 }
