@@ -5,6 +5,8 @@ Extensão para o Chrome e Firefox que habilita uma versão alternativa do tema L
 
 ![browser_img2](https://raw.githubusercontent.com/AdrianoCahete/AdrenalineLight/master/bin/browser_img-2.png)
 
+* Os prints não são necessariamente da última versão.
+
 
 ## Avisos
 - Essa não é uma extensão oficial do Adrenaline, então não adianta reclamar lá.  
@@ -28,10 +30,9 @@ Mas vi alguns usuários pedindo a volta do tema Light no fórum, então resolvi 
 
 ### Versão estável
 Firefox: https://addons.mozilla.org/en-US/firefox/addon/adrenaline-light/  
-(pendente de revisão no momento, pode não estar disponível)
 
 Chrome: https://chrome.google.com/webstore/detail/adrenaline-light-theme/ccpaiflmpkndffnokbijmnmepbffdfep  
-(pendente de revisão no momento, pode não estar disponível)
+
 
 ### Versão de desenvolvimento
 
