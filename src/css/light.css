@@ -13,7 +13,8 @@
   */
 
 /* Geral */
-.body {
+.body,
+body {
     color: #323333;
     transition: color ease 0.3s;
 }
@@ -43,11 +44,15 @@ a.button {
 }
 
 /* Menu */
+.Menu,
 .Menu .primaryContent.menuHeader .links a,
 .Menu .secondaryContent.menuColumns .blockLinksList a,
 .Menu .sectionFooter a,
 .Menu .secondaryContent a {
     color: #fff;
+}
+.Menu .menuHeader .muted {
+    color: #ccc;
 }
 
 .breadcrumb {
@@ -187,6 +192,9 @@ font-weight: bold;
 .sidebar .userList .moreLink {
     color: #323333;
 }
+.statusEditorCounter {
+    color: #73d173;
+}
 
 /* Forum List */
 .nodeList .node.category,
@@ -254,6 +262,7 @@ font-weight: bold;
 .larger.textHeading,
 .xenForm .sectionHeader {
     color: #323333;
+    text-shadow: none;
 }
 
 .PageNav a {
@@ -313,6 +322,25 @@ a.PageNavNext {
 .discussionList .stats {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
+}
+.discussionListItem .lastPostInfo .dateTime {
+    color: #323333;
+}
+
+#DiscussionListOptionsHandle {
+    bottom: -14px;
+}
+
+#DiscussionListOptionsHandle a {
+    color: #fff;
+}
+.DiscussionListOptions {
+    color: #323333;
+    padding: 5px;
+    margin-bottom: 0;
+}
+.DiscussionListOptions .buttonGroup input {
+    height: auto;
 }
 
 /* Post */
@@ -430,6 +458,30 @@ a.PageNavNext {
     color: #323333
 }
 
+/* Poll */
+.pollBlock .pollContent {
+    color: #323333;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding-top: 5px;    
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.pollBlock .questionMark {
+    height: 100%;
+    border-radius: 0;
+    font-family: Arial;
+    font-weight: bold;
+}
+.pollBlock .question {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.pollResult .bar {
+    background-image: none;
+}
+
 /* Minha Conta */
 .navigationSideBar .heading,
 .navigationSideBar .subHeading {
@@ -491,4 +543,8 @@ a.PageNavNext {
 
 .hasJs .bbCodeSpoilerText {
     background-color: #fff;
+}
+
+.dataTable tr.dataRow td {
+    border-top: 0;
 }
