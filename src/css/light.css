@@ -402,6 +402,11 @@ a.PageNavNext {
 .bbCodeBlock {
     box-shadow: none;
     border: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+.bbCodeBlock .type {
+    color: inherit;
+    font-weight: bold;
 }
 
 .bbCodeQuote .quoteContainer .quoteExpand {
