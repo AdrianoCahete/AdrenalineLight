@@ -1,80 +1,147 @@
+'use strict';
 /*global module:false*/
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
-  // Project configuration.
-  grunt.initConfig({
-    // Metadata.
-    pkg: grunt.file.readJSON('package.json'),
-    banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
-    // Task configuration.
-    concat: {
-      options: {
-        banner: '<%= banner %>',
-        stripBanners: true
-      },
-      dist: {
-        src: ['lib/<%= pkg.name %>.js'],
-        dest: 'dist/<%= pkg.name %>.js'
-      }
-    },
-    uglify: {
-      options: {
-        banner: '<%= banner %>'
-      },
-      dist: {
-        src: '<%= concat.dist.dest %>',
-        dest: 'dist/<%= pkg.name %>.min.js'
-      }
-    },
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        unused: true,
-        boss: true,
-        eqnull: true,
-        globals: {}
-      },
-      gruntfile: {
-        src: 'Gruntfile.js'
-      },
-      lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
-      }
-    },
-    nodeunit: {
-      files: ['test/**/*_test.js']
-    },
-    watch: {
-      gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
-      },
-      lib_test: {
-        files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'nodeunit']
-      }
-    }
-  });
+    require('load-grunt-tasks')(grunt);
+    require('time-grunt')(grunt);
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-nodeunit');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.file.defaultEncoding = 'utf8';
+    grunt.file.preserveBOM = true;
 
-  // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit', 'concat', 'uglify']);
+    grunt.initConfig({        
 
+        pkg: grunt.file.readJSON('package.json'),
+        timestamp: grunt.template.today('mm-dd-yyyy @ HH-MM-ss'),
+        baseFolder: __dirname,
+
+        // File Paths
+        WebApp_src: '../../src/',
+        WebApp_Dest: '../../dest',
+
+        banner: '/*!\n*\n*		<%= pkg.name %> - 2017-<%= grunt.template.today("yyyy") %>\n' +
+        '*		  <%= pkg.homepage %>\n*\n' +
+        '*		  v.<%= pkg.version %>\n*\n' +
+				'*		   <%= timestamp %>\n*/\n\n' +
+				'/* File generated automatically */',
+
+        // SCSS Compile
+        sass: {
+            options: {
+                sourceMap: false
+            },
+
+            // WebApp
+            WebApp: {
+                files: {
+                    '<%= WebApp_Dest %>/light.css': '<%= WebApp_src %>/light.scss'
+                }
+            }
+        },
+
+        // LINT Task
+        sasslint: {
+            WebApp: [
+              '<%= WebApp_src %>/**/*.scss',
+            ],
+        },
+
+        // Banner Task
+        usebanner: {
+            SysCopyright: {
+                options: {
+                    position: 'top',
+                    banner: '<%= banner %>',
+                    linebreak: true
+                },
+                files: {
+                    src: [
+                      '<%= WebApp_Dest %>/*.css',
+                    ]
+                }
+            }
+        },
+
+        // Watch Task
+        // TODO: Split by file
+        watch: {
+            options: {
+                dateFormat: function (time) {
+                    grunt.log.writeln('\nThe watch finished in ' + time + 'ms at ' + (new Date()).toString() + '\n-----------------------------\n');
+                    grunt.log.writeln('Waiting for more changes... \n');
+                }
+            },
+            webapp: {
+                files: '../../src/**/*.scss',
+                tasks: ['sass:WebApp', 'usebanner:SysCopyright', 'notify:watch']
+            },
+            sass: {
+                files: '../../src/**/*.scss',
+                tasks: ['sass', 'usebanner:SysCopyright', 'notify:watch']
+            },
+        },
+
+        // Zip it
+        compress: {
+            main: {
+              options: {
+                archive: 'bin/<%= pkg.displayName %>.zip'
+              },
+              files: [{
+                expand: true,
+                comment:'<%= banner %>',
+                src: ['src/**', 'icons/*', 'manifest.json']
+              }]
+            }
+          },
+
+        // Notify 
+        notify: {
+            options: {
+                enabled: true,
+                max_jshint_notifications: 5,
+                success: true,
+                duration: 5
+            },
+
+            watch: {
+                options: {
+                    title: 'Task Complete',
+                    message: 'Task finished with success'
+                }
+            },
+
+            build: {
+                options: {
+                    title: 'Build Complete',
+                    message: 'Build finished with success'
+                }
+            }
+        },
+    });
+
+
+    // Load tasks
+
+    // Default
+    grunt.registerTask('default', ['sass', 'usebanner:SysCopyright', 'sasslint']);
+
+    // Dev
+    grunt.registerTask('dev', ['watch', 'usebanner:SysCopyright']);
+
+    // Lint
+    grunt.registerTask('lint', ['sasslint']);
+
+    // Banner
+    grunt.registerTask('banner', ['usebanner']);
+
+    // ZipIt
+    grunt.registerTask('zip', ['compress']);
+
+    // Build
+    grunt.registerTask('build', ['sass:WebApp', 'usebanner:SysCopyright', 'compress']);
+
+    // Debug
+    grunt.registerTask('printConfig', function () {
+        grunt.log.writeln(JSON.stringify(grunt.config(), null, 2));
+    });
 };
