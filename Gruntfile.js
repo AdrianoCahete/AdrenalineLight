@@ -25,41 +25,41 @@ module.exports = function (grunt) {
 				'/* File generated automatically */',
 
         // SCSS Compile
-        sass: {
-            options: {
-                sourceMap: false
-            },
+        // sass: {
+        //     options: {
+        //         sourceMap: false
+        //     },
 
-            // WebApp
-            WebApp: {
-                files: {
-                    '<%= WebApp_Dest %>/light.css': '<%= WebApp_src %>/light.scss'
-                }
-            }
-        },
+        //     // WebApp
+        //     WebApp: {
+        //         files: {
+        //             '<%= WebApp_Dest %>/light.css': '<%= WebApp_src %>/light.scss'
+        //         }
+        //     }
+        // },
 
         // LINT Task
-        sasslint: {
-            WebApp: [
-              '<%= WebApp_src %>/**/*.scss',
-            ],
-        },
+        // sasslint: {
+        //     WebApp: [
+        //       '<%= WebApp_src %>/**/*.scss',
+        //     ],
+        // },
 
         // Banner Task
-        usebanner: {
-            SysCopyright: {
-                options: {
-                    position: 'top',
-                    banner: '<%= banner %>',
-                    linebreak: true
-                },
-                files: {
-                    src: [
-                      '<%= WebApp_Dest %>/*.css',
-                    ]
-                }
-            }
-        },
+        // usebanner: {
+        //     SysCopyright: {
+        //         options: {
+        //             position: 'top',
+        //             banner: '<%= banner %>',
+        //             linebreak: true
+        //         },
+        //         files: {
+        //             src: [
+        //               '<%= WebApp_Dest %>/*.css',
+        //             ]
+        //         }
+        //     }
+        // },
 
         // Watch Task
         // TODO: Split by file
@@ -92,7 +92,19 @@ module.exports = function (grunt) {
                 src: ['src/**', 'icons/*', 'manifest.json']
               }]
             }
-          },
+        },
+
+        writefile: {
+            options: {
+                data: {
+                    //foo: 1
+                }
+            },
+            main: {
+                src: 'src/manifest.hbs',
+                dest: 'manifest.json'
+            }
+        },
 
         // Notify 
         notify: {
