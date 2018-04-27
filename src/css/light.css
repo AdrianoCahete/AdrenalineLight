@@ -13,6 +13,9 @@
   */
 
 /* Geral */
+html {
+    background: #f1f3f6;
+}
 .body,
 body {
     color: #323333;
@@ -30,8 +33,22 @@ a.button {
 }
 
 /* Header */
+.navTabs .navTab.selected .tabLinks,
+.selectedTabLinks .tabLinks {
+    border-radius: 0;
+    background: #fafafa;
+}
+.navTabs .navLink {
+    background: #fafafa;
+    border-radius: 0;
+    border-bottom: 0;
+}
+#navigation.pageWidth {
+    margin: 0;
+}
 #headerMover #header ~ div {
     background: #f1f3f6 !important; /* To overwrite inline style */
+    margin-top: 15px !important; /* To overwrite inline style */
 }
 
 #headerMover {
@@ -49,7 +66,7 @@ a.button {
 .Menu .secondaryContent.menuColumns .blockLinksList a,
 .Menu .sectionFooter a,
 .Menu .secondaryContent a {
-    color: #fff;
+    color: #323333;
 }
 .Menu .menuHeader .muted {
     color: #ccc;
@@ -61,6 +78,7 @@ a.button {
     height: 37px;
     box-shadow: none;
     border: 1px solid #ccc;
+    border-radius: 0;
 }
 
 .breadcrumb .crumbs {
@@ -101,6 +119,7 @@ a.button {
     background: #feffff;
     box-shadow: none;
     border: 1px solid #ccc;
+    border-radius: 0;
 }
 
 .sectionMain {
@@ -129,9 +148,10 @@ a.callToAction span {
     box-shadow: none;
     height: 30px;
     padding: 2px 10px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
     border: 1px solid #ccc;
     color: #323333;
+    border-radius: 0;
 }
 .button.primary {
     border: 1px solid rgb(173, 39, 33);
@@ -158,6 +178,7 @@ a.callToAction span {
     padding: 1px;
     background-color: #ccc;
     border: 0;
+    border-radius: 0;
 }
 
 .pairsJustified dd,
@@ -204,6 +225,15 @@ font-weight: bold;
     box-shadow: none;
     border: 1px solid #ccc;
     border-bottom: 4px solid #323333;
+    padding: 0;
+    border-radius: 0;
+}
+.nodeList .categoryStrip .nodeTitle {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nodeList .categoryStrip .nodeTitle a {
+    color: #f2f2f2;
 }
 
 .nodeList .node span.brc,
@@ -251,6 +281,7 @@ font-weight: bold;
 
 .categoryStrip .categoryToggle {
      background-color: #fff;
+     margin-right: 5px;
 }
 
  /* Forum Item */
@@ -348,6 +379,7 @@ a.PageNavNext {
     background: #fff;
     box-shadow: none;
     border: 1px solid #ccc;
+    border-radius: 0;
 }
 
 .messageUserBlock div.avatarHolder .avatar {
@@ -356,6 +388,8 @@ a.PageNavNext {
 
 .messageUserBlock div.avatarHolder .onlineMarker {
     left: 14px;
+    top: 2px;
+    border-radius: 0;
 }
 
 .messageUserBlock .userTitle {
@@ -383,6 +417,7 @@ a.PageNavNext {
     background-color: #fff;
     box-shadow: none;
     border: 1px solid #ccc;
+    border-radius: 0;
 }
 
 .message .messageContent .messageText {
@@ -397,25 +432,29 @@ a.PageNavNext {
 .message .newIndicator {
     top: 1px;
     right: 1px;
+    background-image: none;
 }
 
 .bbCodeBlock {
     box-shadow: none;
     border: 1px solid #ccc;
     background-color: #f2f2f2;
+    border-radius: 0;
 }
 .bbCodeBlock .type {
-    color: inherit;
     font-weight: bold;
+    border-radius: 0;
 }
 
 .bbCodeQuote .quoteContainer .quoteExpand {
     background-image: linear-gradient(rgba(78, 78, 78, 0) 0%, rgb(78, 78, 78) 80%);
-    color: #fff;    
+    color: #fff;
+    border-radius: 0;
 }
 
 .bbCodeQuote .quoteContainer {
     background-color: #fff;
+    border-radius: 0;
 }
 
 .messageSimple .messageContent article,
@@ -543,7 +582,7 @@ a.PageNavNext {
 
 /* Spoiler Tag */
 .bbCodeSpoilerButton {
-    height: 20px;
+    background: #fafafa;
 }
 
 .hasJs .bbCodeSpoilerText {
@@ -552,4 +591,14 @@ a.PageNavNext {
 
 .dataTable tr.dataRow td {
     border-top: 0;
+}
+
+.footer a,
+.footer a:visited,
+.footer .pageContent,
+.footerLegal .pageContent,
+.footerLegal dt,
+.footerLegal dd,
+#copyright {
+    color: #323333 !important;
 }
