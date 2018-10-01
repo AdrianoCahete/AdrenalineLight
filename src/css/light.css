@@ -507,7 +507,7 @@ a.PageNavNext {
     color: #323333;
     border: 1px solid #ccc;
     background: #fff;
-    padding-top: 5px;    
+    padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
 }
@@ -593,6 +593,7 @@ a.PageNavNext {
     border-top: 0;
 }
 
+/* Footer */
 .footer a,
 .footer a:visited,
 .footer .pageContent,
@@ -601,4 +602,18 @@ a.PageNavNext {
 .footerLegal dd,
 #copyright {
     color: #323333 !important;
+}
+
+footer,
+.footer,
+.footer .pageContent,
+.footerLegal,
+.footerLegal .pageContent,
+.footerLegal dt,
+.footerLegal dd {
+    background-color: #f2f2f2 !important;
+}
+
+.footer .pageContent {
+    border-top: 1px solid #ccc;
 }
