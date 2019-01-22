@@ -1,7 +1,7 @@
 {
-  "name": "Adrenaline Light Theme",
-  "displayName": "AdrenalineLightTheme",
-  "version": "0.0.4",
+  "name": "adrenaline-light-theme",
+  "displayName": "Adrenaline Light Theme",
+  "version": "1.0.0",
   "description": "Essa extensão foi criada para usarmos o Tema Light, enquanto o mesmo está desabilitado no forum da Adrenaline.",
   "homepage": "https://www.profolio.com.br/?l=adrenalinelight",
   "author": "Adriano Cahete",
@@ -13,19 +13,16 @@
     "build": "grunt build"
   },
   "devDependencies": {
-    "grunt": "^1.0.2",
-    "grunt-available-tasks": "^0.6.3",
+    "grunt": "^1.0.3",
     "grunt-bake": "^1.9.0",
     "grunt-banner": "^0.6.0",
     "grunt-bump": "^0.8.0",
     "grunt-contrib-compress": "^1.4.3",
-    "grunt-sass": "^2.1.0",
-    "grunt-sass-lint": "^0.2.4",
-    "grunt-version": "^1.2.1",
+    "grunt-sass": "^3.0.2",
+    "grunt-version": "^1.3.0",
     "grunt-writefile": "^0.1.4",
-    "load-grunt-tasks": "^3.5.2",
-    "release-it": "^7.3.0",
-    "sass-lint": "^1.8.2",
-    "time-grunt": "^1.4.0"
+    "load-grunt-tasks": "^4.0.0",
+    "release-it": "^10.0.2",
+    "time-grunt": "^2.0.0"
   }
 }

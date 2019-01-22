@@ -38,13 +38,6 @@ module.exports = function (grunt) {
         //     }
         // },
 
-        // LINT Task
-        // sasslint: {
-        //     WebApp: [
-        //       '<%= WebApp_src %>/**/*.scss',
-        //     ],
-        // },
-
         // Banner Task
         // usebanner: {
         //     SysCopyright: {
@@ -94,17 +87,17 @@ module.exports = function (grunt) {
             }
         },
 
-        writefile: {
-            options: {
-                data: {
-                    //foo: 1
-                }
-            },
-            main: {
-                src: 'src/manifest.hbs',
-                dest: 'manifest.json'
-            }
-        },
+        // writefile: {
+        //     options: {
+        //         data: {
+        //             //foo: 1
+        //         }
+        //     },
+        //     main: {
+        //         src: 'src/manifest.hbs',
+        //         dest: 'manifest.json'
+        //     }
+        // },
 
         // Notify 
         notify: {
@@ -139,9 +132,6 @@ module.exports = function (grunt) {
 
     // Dev
     grunt.registerTask('dev', ['watch', 'usebanner:SysCopyright']);
-
-    // Lint
-    grunt.registerTask('lint', ['sasslint']);
 
     // Banner
     grunt.registerTask('banner', ['usebanner']);
