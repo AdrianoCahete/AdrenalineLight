@@ -1,9 +1,9 @@
 # Adrenaline Light Theme
 Extensão para o Chrome e Firefox que habilita uma versão alternativa do tema Light para o forum Adrenaline
 
-![browser_img](https://raw.githubusercontent.com/AdrianoCahete/AdrenalineLight/master/bin/browser_img.png)
+![browser_img](https://raw.githubusercontent.com/AdrianoCahete/AdrenalineLight/master/img/browser_img.png)
 
-![browser_img2](https://raw.githubusercontent.com/AdrianoCahete/AdrenalineLight/master/bin/browser_img-2.png)
+![browser_img2](https://raw.githubusercontent.com/AdrianoCahete/AdrenalineLight/master/img/browser_img-2.png)
 
 * Os prints não são necessariamente da última versão.
 
