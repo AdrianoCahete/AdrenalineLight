@@ -6,7 +6,7 @@ const date = require('./timestamp');
 const dest = 'bin/AdrenalineLightTheme.zip';
 
 zip({ 
-  source: ['icons/*', 'src/*', './manifest.json'], 
+  source: ['icons/*', 'src/*', 'manifest.json'], 
   destination: dest,
   cwd: './',
 }).then(() => {

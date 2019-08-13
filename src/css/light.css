@@ -131,7 +131,7 @@ a.button.button--cta {
 .pageNav-page,
 .pageNav-jump,
 .menu-header {
-    background: #c8c8c8;
+    background: #c8c8c8 !important;
 }
 
 /* Labels */
@@ -192,6 +192,7 @@ a.bbCodeBlock-sourceJump {
 .memberTooltip-header {
     background: #f2f2f2;
 }
+
 .tooltip--member.tooltip--bottom .tooltip-arrow,
 .tooltip--member.tooltip--bottom .tooltip-arrow::after {
     border-bottom-color: #f2f2f2;
@@ -207,6 +208,17 @@ a.bbCodeBlock-sourceJump {
 .input.is-focused {
     background: #f4f4f4;
 
+}
+
+/* Sticky PageNav */
+.block-outer.block-outer--after {
+    position: sticky;
+    bottom: 0;
+    background: #f2f2f2;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    z-index: 10;
+    box-shadow: 1px -2px 15px 1px rgba(0,0,0,0.3);
 }
 
 
