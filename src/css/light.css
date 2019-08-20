@@ -40,7 +40,7 @@ html,
 
 .body,
 body {
-    color: #323333;
+    color: var(--textColor, #323333);
     transition: color ease 0.3s;
 }
 
@@ -55,7 +55,7 @@ a.link:hover {
 
 a.link,
 a.link:visited {
-    color: #323333;
+    color: var(--textColor, #323333);
     transition: color ease 0.3s;
 }
 
@@ -93,7 +93,7 @@ a.link.link--internal {
 /* Fix button texts */
 .button.button--link,
 a.button.button--link {
-    color: #323333 !important;
+    color: var(--textColor, #323333) !important;
 }
 
 .button.button--primary,
@@ -110,7 +110,7 @@ a.button.button--cta {
 
 /* Selected header Item */
 .p-nav-list .p-navEl.is-selected .p-navEl-link {
-    color: #323333;
+    color: var(--textColor, #323333);
 }
 
 /* Notices */
@@ -160,7 +160,7 @@ a.button.button--cta {
 
 /* Quote Header */
 a.bbCodeBlock-sourceJump {
-    color: #000;
+    color: var(--textColor, #323333);
 }
 
 /* Message Footer */
@@ -221,7 +221,10 @@ a.bbCodeBlock-sourceJump {
     box-shadow: 1px -2px 15px 1px rgba(0,0,0,0.3);
 }
 
-
+/* Force White text to be the same as the text */
+.message-body span[style*="color: rgb(255, 255, 255)"] {
+    color: var(--textColor, #323333) !important;
+}
 
 
 
