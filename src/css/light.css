@@ -1,7 +1,7 @@
 /**
  *
  * Custom CSS Light Theme for Adrenaline Forum (v2.1.3)
- * v2019-08-12
+ * v2019-08-22
  * Created by Adriano Caheté (Nano / -M-1Nano) <https://www.profolio.com.br/?l=adrenalinelight>
  *
  **/
@@ -60,7 +60,7 @@ a.link:visited {
 }
 
 a.link.link--internal {
-    color: #d24242;
+    color: var(--primaryColor, #d24242);
 }
 
 .fr-box.fr-basic .fr-element::selection,
@@ -99,7 +99,7 @@ a.button.button--link {
 .button.button--primary,
 a.button.button--primary {
     border: 1px solid rgb(173, 39, 33);
-    background-color: #d24242;
+    background-color: var(--primaryColor, #d24242);
     color: #fff;
 }
 
@@ -116,7 +116,7 @@ a.button.button--cta {
 /* Notices */
 .notice.notice--primary {
     color: #fff;
-    background: #0089d0;
+    background: var(--infoColor, #0089d0);
 }
 
 .notices.notices--block .notice {
@@ -137,13 +137,13 @@ a.button.button--cta {
 /* Labels */
 /* Dedicado */
 .label.label--dedicado {
-    background: #0089d0;
+    background: var(--secondaryColor, #0089d0);;
     color: #fff;
 }
 
 /* Oficial */
 .label.label--oficial {
-    background: #d24242;
+    background: var(--primaryColor, #d24242);
     color: #fff;
 }
 
@@ -207,7 +207,6 @@ a.bbCodeBlock-sourceJump {
 .input:focus,
 .input.is-focused {
     background: #f4f4f4;
-
 }
 
 /* Sticky PageNav */
@@ -217,8 +216,13 @@ a.bbCodeBlock-sourceJump {
     background: #f2f2f2;
     padding: 5px;
     border-top: 1px solid #ccc;
-    z-index: 10;
+    z-index: 100;
     box-shadow: 1px -2px 15px 1px rgba(0,0,0,0.3);
+}
+
+/* Active Page Nav */
+.pageNav-page.pageNav-page--current {
+    background: #000 !important;
 }
 
 /* Force White text to be the same as the text */
