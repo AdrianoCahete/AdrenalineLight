@@ -1,0 +1,12 @@
+/* Vars */
+:root {
+    --primaryColor: #d24242;
+    --secondaryColor: #0089d0;
+
+    --bgColor: #f1f3f6;
+    
+    --textColor: #323333;
+    --invertTextColor: #f2f2f2;
+
+    --infoColor: #0089d0;
+}

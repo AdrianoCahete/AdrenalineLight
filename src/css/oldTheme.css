@@ -1,0 +1,567 @@
+ /**
+ *
+ * This CSS is part of Custom CSS Light Theme for Adrenaline Forum (v2.1.3)
+ * Created by Adriano Caheté (Nano / -M-1Nano) <https://www.profolio.com.br/?l=adrenalinelight>
+ *
+ **/
+
+ /*
+ * TODO: See if it's really neceessary
+ */
+.navTabs .navTab.selected .tabLinks,
+.selectedTabLinks .tabLinks {
+    border-radius: 0;
+    background: #fafafa;
+}
+.navTabs .navLink {
+    background: #fafafa;
+    border-radius: 0;
+    border-bottom: 0;
+}
+#navigation.pageWidth {
+    margin: 0;
+}
+#headerMover #header ~ div {
+    background: var(--bgColor) !important; /* To overwrite inline style */
+    margin-top: 15px !important; /* To overwrite inline style */
+}
+
+#headerMover {
+    background: var(--bgColor);
+    transition: all ease 0.3s;
+}
+
+#headerMover #header {
+    background: #323333;
+}
+
+/* Menu */
+.Menu,
+.Menu .primaryContent.menuHeader .links a,
+.Menu .secondaryContent.menuColumns .blockLinksList a,
+.Menu .sectionFooter a,
+.Menu .secondaryContent a {
+    color: #323333;
+}
+.Menu .menuHeader .muted {
+    color: #ccc;
+}
+
+.breadcrumb {
+    background-color: #feffff;
+    font-size: 14px;
+    height: 37px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.breadcrumb .crumbs {
+    line-height: 39px;
+}
+
+.breadcrumb .jumpMenuTrigger {
+    margin: 10px 0 0;
+    width: 23px;
+    height: 20px;
+    background-size: 246px;
+    background-position: 0 0;
+}
+
+.PanelScroller .scrollContainer {
+    background: #feffff;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    color: #323333;
+}
+.PanelScroller .navControls a.current span {
+    border-top-color: #fff;
+}
+
+.DismissParent .DismissCtrl {
+    color: #323333;
+}
+
+.sectionMain,
+.primaryContent,
+.secondaryContent,
+.memberList,
+#recentActivity,
+.resourceList,
+#warnings > div[class=""],
+.searchResult.primaryContent,
+.thread_view .threadAlerts {
+    background: #feffff;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.sectionMain {
+    border: 0;
+    background-color: transparent;
+}
+
+.sectionMain:after,
+.sidebar .secondaryContent:after,
+.xengallerySideBar .secondaryContent:after,
+.profilePage .mast .primaryContent:after,
+.profilePage .mast .secondaryContent:after,
+.memberList:after,
+.errorPanel:after,
+.nodeDescriptionTip:after,
+.resourceListSidebar .secondaryContent:after,
+.PanelScroller .scrollContainer:after,
+.bbCodeQuote:after, .bbCodeBlock:after, .bbCodeSpoilerText:after {
+    background-image: none;
+}
+
+a.callToAction span {
+    color: #fff;
+}
+
+.avatar img,
+.avatar .img,
+.avatarCropper {
+    padding: 1px;
+    background-color: #ccc;
+    border: 0;
+    border-radius: 0;
+}
+
+.pairsJustified dd,
+.pairsInline dd,
+.node .nodeLastPost,
+form.sectionMain .node .secondaryContent.nodeLastPost {
+    color: #323333;
+}
+
+.sidebar .section .primaryContent > h3:first-child,
+.sidebar .section .secondaryContent > h3:first-child {
+    background-image: none;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f2f2f2;
+    color: #323333;
+    font-weight: bold;
+}
+
+.sidebar .section .primaryContent > h3:first-child:before,
+.sidebar .section .secondaryContent > h3:first-child:before,
+.sidebar .section .primaryContent h3:after,
+.sidebar .section .secondaryContent h3:after {
+    border-bottom: 0;
+}
+
+.sidebar .section .primaryContent h3 a,
+.sidebar .section .secondaryContent h3 a {
+color: #323333;
+font-weight: bold;
+}
+
+.sidebar .userList .moreLink {
+    color: #323333;
+}
+.statusEditorCounter {
+    color: #73d173;
+}
+
+/* Forum List */
+.nodeList .node.category,
+.nodeList .node,
+.nodeList .node.category.shortNode {
+    background-color: var(--bgColor);
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-bottom: 4px solid #323333;
+    padding: 0;
+    border-radius: 0;
+}
+.nodeList .categoryStrip .nodeTitle {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nodeList .categoryStrip .nodeTitle a {
+    color: #f2f2f2;
+}
+
+.nodeList .node span.brc,
+.nodeList .node.groupNoChildren:after,
+.nodeList .node.level_2:after,
+.nodeList .categoryStrip:after,
+.messageList .message.messageFullBlock:after,
+.message .messageInfo:after,
+.profilePage #info:after,
+#recentActivity:after,
+.importantMessage:after,
+.primaryContent.resourceHistory:after,
+.message .signature:after,
+.messageSimple.primaryContent:after,
+.searchResult.primaryContent:after,
+.discussionListItem .stats dl:after,
+.discussionListItem .stats dl:before,
+.messageUserInfo:after,
+.userBanner.wrapped span,
+.message .newIndicator span {
+    display: none;
+}
+
+.nodeList .categoryStrip {
+    background-image: none;
+    background-color: #323333;
+}
+
+.nodeList .categoryForumNodeInfo,
+.nodeList .forumNodeInfo,
+.nodeList .pageNodeInfo,
+.nodeList .linkNodeInfo,
+.nodeList .libraryNodeInfo,
+.nodeList .node.groupNoChildren + .node.groupNoChildren .nodeInfo,
+.nodeList .node.level_1.forum.groupNoChildren + .node.groupNoChildren > .categoryStrip + .nodeInfo {
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.node .nodeText .nodeTitle,
+.node .nodeText .nodeTitle a {
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.categoryStrip .categoryToggle {
+     background-color: #fff;
+     margin-right: 5px;
+}
+
+ /* Forum Item */
+.PageNav .pageNavHeader {
+    color: #323333;
+}
+
+.titleBar h1,
+.larger.textHeading,
+.xenForm .sectionHeader {
+    color: #323333;
+    text-shadow: none;
+}
+
+.PageNav a {
+    background-color: #fff;
+    box-shadow: none;
+    padding: 2px 5px;
+}
+.PageNav a.text {
+    padding: 2px 5px;
+}
+a.PageNavPrev,
+a.PageNavNext {
+    color: #323333;
+    height: 18px;
+}
+
+.PageNav .scrollable {
+    width: 168px;
+    height: 22px;
+}
+
+.discussionListItem {
+    border-top: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    width: calc(100% - 8px);
+    border-left: 3px solid transparent;
+}
+
+.DiscussionList.InlineModForm,
+.discussionListItems .sticky {
+    background-color: #fff;
+}
+
+.discussionList .sectionHeaders {
+    background-color: #323333;
+}
+.discussionList .sectionHeaders a {
+    color: #fff;
+}
+.discussionListItems .unread .title a,
+.discussionListItem .title a,
+.discussionListItems .unread .lastPostInfo .username {
+    color: #323333;
+}
+
+.discussionListItems li.sticky {
+    border-left: 3px solid #F66;
+    width: calc(100% - 12px);
+}
+
+.discussionListItem .stats dl {
+    border-left: 0;
+    border-right: 0;
+}
+
+.discussionList .stats {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.discussionListItem .lastPostInfo .dateTime {
+    color: #323333;
+}
+
+#DiscussionListOptionsHandle {
+    bottom: -14px;
+}
+
+#DiscussionListOptionsHandle a {
+    color: #fff;
+}
+.DiscussionListOptions {
+    color: #323333;
+    padding: 5px;
+    margin-bottom: 0;
+}
+.DiscussionListOptions .buttonGroup input {
+    height: auto;
+}
+
+/* Post */
+.messageUserInfo {
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.messageUserBlock div.avatarHolder .avatar {
+    text-align: center;
+}
+
+.messageUserBlock div.avatarHolder .onlineMarker {
+    left: 14px;
+    top: 2px;
+    border-radius: 0;
+}
+
+.messageUserBlock .userTitle {
+    color: #323333;
+}
+
+.authorEnd .username.author {
+    font-weight: bold;
+}
+
+.userBanner.bannerRed,
+.userBanner.bannerGreen {
+    background-image: none;
+    border: none;
+}
+
+.userBanner.bannerGreen {
+    background-color: rgb(57, 183, 60);
+}
+.userBanner.bannerRed {
+    background-color: rgb(183, 57, 57);
+}
+
+.message .messageInfo {
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.message .messageContent .messageText {
+    color: #323333;
+}
+
+.message .signature {
+    border-top: 1px solid #ccc;
+    color: #323333;
+}
+
+.message .newIndicator {
+    top: 1px;
+    right: 1px;
+    background-image: none;
+}
+
+.bbCodeBlock {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 0;
+}
+.bbCodeBlock .type {
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.bbCodeQuote .quoteContainer .quoteExpand {
+    background-image: linear-gradient(rgba(78, 78, 78, 0) 0%, rgb(78, 78, 78) 80%);
+    color: #fff;
+    border-radius: 0;
+}
+
+.bbCodeQuote .quoteContainer {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.messageSimple .messageContent article,
+.messageSimple .messageContent blockquote {
+    color: #323333;
+}
+
+/* Overlay */
+.xenOverlay .formOverlay,
+.xenTooltip,
+.xenOverlay .section,
+.xenOverlay .sectionMain,
+.xenOverlay .subHeading,
+.xenOverlay .secondaryContent,
+.xenOverlay .primaryContent,
+.xenOverlay .sectionFooter {
+    background-color: #fff;
+    color: #323333;
+}
+.xenForm .formHeader,
+.xenOverlay .heading,
+.editorPopup .heading {
+    background-color: #323333;
+    color: #fff;
+}
+.xenOverlay .formOverlay .heading {
+    color: #323333;
+}
+.xenOverlay .button {
+    box-shadow: none !important;
+    height: auto;
+}
+.xenTooltip {
+    border: 1px solid #ccc;
+}
+#QuoteSelected .arrow {
+    border-top: 1px none #ccc;
+    border-bottom: 6px solid #ccc;
+}
+.HasDragDrop .MultiQuoteItem {
+    border-bottom: none;
+}
+.xenTooltip a,
+.xenTooltip a:hover {
+    color: #323333
+}
+
+/* Poll */
+.pollBlock .pollContent {
+    color: #323333;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.pollBlock .questionMark {
+    height: 100%;
+    border-radius: 0;
+    font-family: Arial;
+    font-weight: bold;
+}
+.pollBlock .question {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.pollResult .bar {
+    background-image: none;
+}
+
+/* Minha Conta */
+.navigationSideBar .heading,
+.navigationSideBar .subHeading {
+    background-image: none;
+    background-color: #323333;
+}
+
+.navigationSideBar .section {
+    background-color: #fff;
+    border-left: 0;
+}
+
+.xenForm .ctrlUnit {
+    background: #fff;
+    color: #323333;
+    border-top: 0;
+    border-bottom: 0;
+}
+.xenForm fieldset + .sectionHeader,
+.xenForm .ctrlUnit+.sectionHeader {
+    color: #fff;
+}
+.mainContentBlock .xenForm {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.xenForm fieldset,
+.xenForm .formGroup,
+.xenForm .ctrlUnit,
+.xenForm fieldset + .sectionHeader,
+.xenForm .ctrlUnit+.sectionHeader {
+    border-top: 0;
+}
+
+.alerts h3,
+.textHeading,
+.xenForm .sectionHeader,
+.event .content .snippet,
+.explain .CurrentStatus {
+    color: #323333;
+}
+
+.textCtrl {
+    background-color: #fff;
+    color: #323333;
+    border: 1px solid #ccc;
+}
+
+/* Search */
+.searchResult .snippet a {
+    color: #323333;
+}
+
+/* Spoiler Tag */
+.bbCodeSpoilerButton {
+    background: #fafafa;
+}
+
+.hasJs .bbCodeSpoilerText {
+    background-color: #fff;
+}
+
+.dataTable tr.dataRow td {
+    border-top: 0;
+}
+
+/* Footer */
+.footer a,
+.footer a:visited,
+.footer .pageContent,
+.footerLegal .pageContent,
+.footerLegal dt,
+.footerLegal dd,
+#copyright {
+    color: #323333 !important;
+}
+
+footer,
+.footer,
+.footer .pageContent,
+.footerLegal,
+.footerLegal .pageContent,
+.footerLegal dt,
+.footerLegal dd {
+    background-color: #f2f2f2 !important;
+}
+
+.footer .pageContent {
+    border-top: 1px solid #ccc;
+}
