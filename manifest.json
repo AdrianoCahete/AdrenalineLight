@@ -1,17 +1,17 @@
 {
   "name": "Adrenaline Light Theme",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "manifest_version": 2,
   "description": "Essa extensão foi criada para usarmos o Tema Light, porém melhorado.",
-  "homepage_url": "https://www.profolio.com.br/?l=adrenalinelight",
+  "homepage_url": "https://www.egaming.com.br/adrenalinelight",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "permissions": [
-    "https://adrenaline.uol.com.br/forum/*",
-    "https://adrenaline.uol.com.br/barra/*"
+    "https://adrenaline.com.br/forum/*",
+    "https://adrenaline.com.br/barra/*"
   ],
   "web_accessible_resources": [
     "src/css/oldTheme.css",
@@ -21,7 +21,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://adrenaline.uol.com.br/forum/*"
+        "https://adrenaline.com.br/forum/"
       ],
       "js": [
         "src/js/applyJS.js",
@@ -30,7 +30,7 @@
     },
     {
       "matches": [
-        "https://adrenaline.uol.com.br/barra/*"
+        "https://adrenaline.com.br/barra/"
       ],
       "js": [
         "src/js/applyJS.js",
