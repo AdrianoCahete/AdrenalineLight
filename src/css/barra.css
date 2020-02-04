@@ -1,11 +1,29 @@
  /**
  *
  * This CSS is part of Custom CSS Light Theme for Adrenaline Forum (v2.1.3)
- * Created by Adriano Caheté (Nano / -M-1Nano) <https://www.profolio.com.br/?l=adrenalinelight>
+ * Created by Adriano Caheté (Nano / -M-1Nano) <https://www.egaming.com.br/?l=adrenalinelight>
  *
  **/
 
+ /* Default */
+ body {
+     margin: 0;
+     background: var(--bgColor, #f1f3f6) !important;
+ }
+
 /* iFrame Barra Topo */
 .content-mc {
-    background: var(--bgColor);
+    background: var(--bgColor, #f1f3f6) !important;
+}
+
+/* Remove Logo to gain space */
+.logo-mc {
+    display: none;
+}
+
+/* Change text color to match new background */
+.grid-post a,
+.post-meta {
+    color: var(--textColor) !important;
+    text-shadow: none !important;
 }

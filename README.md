@@ -55,7 +55,7 @@ Nota: No Firefox, toda vez que você fecha o navegador, a extensão é desabilit
 ## Bugs conhecidos:
 
 ## Achei um bug, o que faço?
-Primeiro, veja se ele não ocorre também no tema escuro. Se acontecer, [reporte ele no fórum do Adrenaline](https://adrenaline.uol.com.br/forum/threads/bugs-do-forum-em-geral-relatem-aqui.363386/).
+Primeiro, veja se ele não ocorre também no tema escuro. Se acontecer, [reporte ele no fórum do Adrenaline](https://adrenaline.com.br/forum/threads/bugs-do-forum-em-geral-relatem-aqui.363386/).
 Se não acontecer, pode ser bug dessa extensão.
 Reporte na aba Issues, com a versão da extensão, seu navegador, seu sistema operacional, printscreen e link para o tópico.
 

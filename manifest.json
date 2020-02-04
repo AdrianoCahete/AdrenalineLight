@@ -1,6 +1,6 @@
 {
   "name": "Adrenaline Light Theme",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "manifest_version": 2,
   "description": "Essa extensão foi criada para usarmos o Tema Light, porém melhorado.",
   "homepage_url": "https://www.egaming.com.br/adrenalinelight",
@@ -10,32 +10,39 @@
     "128": "icons/icon128.png"
   },
   "permissions": [
-    "https://adrenaline.com.br/forum/*",
-    "https://adrenaline.com.br/barra/*"
+    "*://*.adrenaline.com.br/forum*",
+    "*://*.adrenaline.com.br/barra*"
   ],
   "web_accessible_resources": [
-    "src/css/oldTheme.css",
-    "src/css/light.css",
-    "src/css/barra.css"
+    "src/css/*.css",
+    "src/js/*.js"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://adrenaline.com.br/forum/"
+        "*://*.adrenaline.com.br/forum*",
+        "*://adrenaline.com.br/forum*"
+      ],
+      "css": [
+        "src/css/themeDefaults.css",
+        "src/css/light.css",
+        "src/css/oldTheme.css"
       ],
       "js": [
-        "src/js/applyJS.js",
-        "src/js/applyForumTheme.js"
-      ]
+        "src/js/applyJS.js"
+      ],
+      "all_frames": true
     },
     {
       "matches": [
-        "https://adrenaline.com.br/barra/"
+        "*://*.adrenaline.com.br/barra*",
+        "*://adrenaline.com.br/barra*"
       ],
-      "js": [
-        "src/js/applyJS.js",
-        "src/js/applyBarraTheme.js"
-      ]
+      "css": [
+        "src/css/themeDefaults.css",
+        "src/css/barra.css"
+      ],
+      "all_frames": true
     }
   ]
 }

@@ -9,7 +9,7 @@ var footerActionBar = e[0];
 
 var themeStatus = document.createElement("a");
 themeStatus.className="addon_Adrena_LE-Status";
-themeStatus.setAttribute("href", "https://adrenaline.uol.com.br/forum/threads/extensao-pro-tema-claro-no-forum.628918/");
+themeStatus.setAttribute("href", "https://adrenaline.com.br/forum/threads/extensao-pro-tema-claro-no-forum.628918/");
 themeStatus.setAttribute("target", "_blank");
 themeStatus.innerHTML = ("Extensão Adrenaline Light Extended ativada");
 footerActionBar.appendChild(themeStatus);
