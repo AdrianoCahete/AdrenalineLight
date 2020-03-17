@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "bestzip": "^2.1.4",
-    "copyfiles": "^2.1.0",
+    "copyfiles": "^2.2.0",
     "del-cli": "^2.0.0",
     "replace": "^1.1.0"
   }
