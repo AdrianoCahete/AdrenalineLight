@@ -3,7 +3,7 @@ const zip = require('bestzip');
 const date = require('./timestamp');
 
 //const dest = 'bin/sai360-fontstack_' + date.TIMESTAMP + '.zip';
-const dest = 'bin/AdrenalineLightTheme.zip';
+const dest = 'bin/BetterAdrena.zip';
 
 zip({ 
   source: ['icons/*', 'src/*', 'manifest.json'], 
