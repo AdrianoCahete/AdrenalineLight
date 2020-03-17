@@ -1,6 +1,6 @@
 /**
  *
- * Custom CSS Light Theme for Adrenaline Forum (v2.1.3)
+ * Custom CSS Light Theme for Adrenaline Forum (v2.1.7)
  * v2020-02
  * Created by Adriano Caheté (Nano / -M-1Nano) <https://www.egaming.com.br/adrenalinelight>
  *
@@ -168,6 +168,17 @@ a.button.button--cta {
 /* Quote Header */
 a.bbCodeBlock-sourceJump {
     color: var(--textColor, #323333);
+}
+
+/* Message/Post */
+
+
+/* Signature/Assinatura */
+
+/* Overwite White signatures! */
+.message-signature span[style*="color: rgb(255, 255, 255)"],
+.message-signature span[style*="color: #ffffff"] {
+    color: var(--sigColor) !important;
 }
 
 /* Message Footer */
