@@ -175,9 +175,10 @@ a.bbCodeBlock-sourceJump {
 
 /* Signature/Assinatura */
 
-/* Overwite White signatures! */
+/* Overwite White/Light signatures! */
 .message-signature span[style*="color: rgb(255, 255, 255)"],
-.message-signature span[style*="color: #ffffff"] {
+.message-signature span[style*="color: #ffffff"],
+.message-signature span[style*="color: rgb(239, 239, 239)"] {
     color: var(--sigColor) !important;
 }
 
