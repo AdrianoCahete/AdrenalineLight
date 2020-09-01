@@ -63,7 +63,7 @@
         "*://adrenaline.uol.com.br/forum*"
       ],
       "js": [
-        "redirectFromUOL.js"
+        "src/js/redirectFromUOL.js"
       ]
     }
   ]
