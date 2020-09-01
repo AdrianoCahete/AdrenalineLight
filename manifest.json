@@ -3,7 +3,7 @@
   "short_name": "BetterAdrena",
   "version": "1.2.1",
   "manifest_version": 2,
-  "description": "BetterAdrena é uma extensão para o Chrome e Firefox que habilita uma versão alternativa do tema Light para o forum Adrenaline, junto com outras melhorias.",
+  "description": "BetterAdrena é uma extensão para o Chrome e Firefox que traz várias melhorias para o fórum Adrenaline.",
   "homepage_url": "https://www.egaming.com.br/projects/BetterAdrena",
   "icons": {
     "16": "icons/icon16.png",
