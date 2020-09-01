@@ -37,6 +37,8 @@ Firefox: https://addons.mozilla.org/en-US/firefox/addon/adrenaline-light/
 
 Chrome: https://chrome.google.com/webstore/detail/adrenaline-light-theme/ccpaiflmpkndffnokbijmnmepbffdfep  
 
+Edge: 
+
 
 ### Versão de desenvolvimento
 

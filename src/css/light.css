@@ -284,3 +284,10 @@ a.bbCodeBlock-sourceJump {
     color: var(--textColor);
     cursor: pointer;
 }
+
+/* Really ignore users */
+/* https://adrenaline.com.br/forum/threads/perguntas-e-respostas-frequentes-faq.275007/page-45#post-1074854529 */
+.showIgnoredLink.js-showIgnored,
+.messageNotice.messageNotice--ignored + div {
+    display: none !important;
+}
