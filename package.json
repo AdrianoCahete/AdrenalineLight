@@ -20,7 +20,7 @@
     "build": "npm run clean && npm run generate_artifacts"
   },
   "devDependencies": {
-    "bestzip": "^2.1.4",
+    "bestzip": "^2.1.7",
     "copyfiles": "^2.2.0",
     "del-cli": "^2.0.0",
     "replace": "^1.1.0"
