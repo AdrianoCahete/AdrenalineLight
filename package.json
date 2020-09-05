@@ -1,12 +1,12 @@
 {
   "name": "better-adrena",
   "displayName": "BetterAdrena",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "BetterAdrena é uma extensão que traz várias melhorias para o forum Adrenaline.",
   "homepage": "https://www.egaming.com.br/projetos/betteradrena",
   "author": "Adriano Cahete",
   "settings": {
-    "themeColor": "3c3c3c"
+    "themeColor": "#3c3c3c"
   },
   "engines": {
     "node": "~8.0.0"
@@ -20,9 +20,9 @@
     "build": "npm run clean && npm run generate_artifacts"
   },
   "devDependencies": {
-    "bestzip": "^2.1.4",
-    "copyfiles": "^2.2.0",
-    "del-cli": "^2.0.0",
-    "replace": "^1.1.0"
+    "bestzip": "^2.1.7",
+    "copyfiles": "^2.3.0",
+    "del-cli": "^3.0.1",
+    "replace": "^1.2.0"
   }
 }
