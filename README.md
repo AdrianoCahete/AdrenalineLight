@@ -37,12 +37,14 @@ Firefox: https://addons.mozilla.org/en-US/firefox/addon/adrenaline-light/
 
 Chrome: https://chrome.google.com/webstore/detail/adrenaline-light-theme/ccpaiflmpkndffnokbijmnmepbffdfep  
 
-Edge: Soon
+Edge: https://microsoftedge.microsoft.com/addons/detail/betteradrena/mnggnbecfodobgkicappffjdenghgjjl
+
+Opera: Breve? (Esperando revisão manual do time da Opera desde 05-Sep-2020...)
 
 
 ### Versão de desenvolvimento
 
-ATENÇÂO: Este modo é somente para a versão não publicada nas respectivas lojas e pode conter bugs.
+ATENÇÂO: Este modo é somente para a versão **não** publicada nas respectivas lojas e pode conter bugs.
 
 Baixe o zip desse repositório e extraia para qualquer pasta.
 
@@ -53,8 +55,6 @@ No Firefox: Em Extensões, clique no ícone de engrenagem, clique em "Depurar Ex
 Se ela aparecer abaixo, é que está funcionando.
 
 Nota: No Firefox, toda vez que você fecha o navegador, a extensão é desabilitada. No Chrome, ele lhe avisa quando inciar se você quer ou não manter a extensão habilitada.
-
-## Bugs conhecidos:
 
 ## Achei um bug, o que faço?
 Primeiro, veja se ele não ocorre também no tema escuro. Se acontecer, [reporte ele no fórum do Adrenaline](https://adrenaline.com.br/forum/threads/bugs-do-forum-em-geral-relatem-aqui.363386/).
