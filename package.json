@@ -15,7 +15,7 @@
     "start": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "./node_modules/.bin/del-cli bin/*",
-    "generate_artifacts": "node ./utils/zip.js",
+    "generate": "node ./utils/zip.js",
     "// update_infos": "node ./utils/replace.js",
     "build": "npm run clean && npm run generate_artifacts"
   },
