@@ -17,7 +17,7 @@
     "clean": "./node_modules/.bin/del-cli bin/*",
     "generate": "node ./utils/zip.js",
     "// update_infos": "node ./utils/replace.js",
-    "build": "npm run clean && npm run generate_artifacts"
+    "build": "npm run clean && npm run generate"
   },
   "devDependencies": {
     "bestzip": "^2.1.7",
