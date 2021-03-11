@@ -1,7 +1,7 @@
 {
   "name": "BetterAdrena",
   "short_name": "BetterAdrena",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "manifest_version": 2,
   "description": "BetterAdrena é uma extensão que traz várias melhorias para o fórum Adrenaline.",
   "homepage_url": "https://www.egaming.com.br/projects/BetterAdrena",
@@ -39,7 +39,8 @@
     {
       "matches": [
         "*://*.adrenaline.com.br/forum*",
-        "*://adrenaline.com.br/forum*"
+        "*://adrenaline.com.br/forum*",
+        "*://forum.adrenaline.com.br/*"
       ],
       "css": [
         "src/css/themeDefaults.css",
