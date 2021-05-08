@@ -118,7 +118,6 @@ a.button.button--cta {
 /* Notices */
 .notice.notice--primary {
     color: var(--invertTextColor) !important;
-    
 }
 
 .notice.notice--primary {
@@ -141,7 +140,11 @@ a.button.button--cta {
     background: #c8c8c8 !important;
 }
 
-/* Labels */
+/* Labels - tags */
+.label {
+    padding-bottom: 2px;
+}
+
 /* Dedicado */
 .label.label--dedicado {
     background: var(--secondaryColor, #0089d0);;
@@ -151,6 +154,12 @@ a.button.button--cta {
 /* Oficial */
 .label.label--oficial {
     background: var(--primaryColor, #d24242);
+    color: var(--invertTextColor);
+}
+
+/* Preview */
+.label.label--preview {
+    background-color: var(--colorTag1);
     color: var(--invertTextColor);
 }
 
@@ -256,8 +265,10 @@ a.bbCodeBlock-sourceJump {
     background: #000 !important;
 }
 
-/* Force White text to be the same as the text */
-.message-body span[style*="color: rgb(255, 255, 255)"] {
+/* Force White/Light Gray text to be the same as the text */
+.message-body span[style*="color: rgb(255, 255, 255)"],
+.message-body .bbCodeBlock-content span[style*="color: rgb(255, 255, 255)"],
+.message-body .bbCodeBlock-content span[style*="color: rgb(239, 239, 239)"] {
     color: var(--textColor, #323333) !important;
 }
 
